@@ -6,10 +6,15 @@
 .container {
   display: grid;
   grid-template-areas:
-    "sidebar header header header header"
+    "sidebar    header       header        header      header"
+    "sidebar main-content main-content main-content main-content"
+    "sidebar main-content main-content main-content main-content"
+    "sidebar main-content main-content main-content main-content"
+    "sidebar main-content main-content main-content main-content"
+    "sidebar main-content main-content main-content main-content"
     "sidebar main-content main-content main-content main-content";
 }
-/* header design */
+/* header layout */
 
 header {
   grid-area: header;
@@ -17,6 +22,7 @@ header {
   background-color: pink;
   display: grid;
   grid-template-columns: 3fr 1.5fr;
+  align-items: center;
 }
 
 header > div {
@@ -25,12 +31,22 @@ header > div {
   gap: 10px;
 }
 
-/* sidebar design */
+/* sidebar layout */
 
 .sidebar {
   grid-area: sidebar;
   background-color: aqua;
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr;
+  gap: 30px;
+  align-items: center;
 }
+
+.sidebar > div > div {
+  padding-bottom: 10px;
+}
+
+/*main content layout*/
 
 .main-content {
   grid-area: main-content;
