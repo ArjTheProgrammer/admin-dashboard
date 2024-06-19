@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: #402b3a;
 }
 
 .container {
@@ -39,13 +40,10 @@ header > div {
   grid-area: sidebar;
   background-color: #d63484;
   display: grid;
-  grid-template-rows: 1fr 3fr 2fr;
-  gap: 30px;
-  align-items: center;
-}
-
-.sidebar > div > div {
-  padding-bottom: 10px;
+  grid-template-rows: 0.1fr 1fr;
+  grid-auto-rows: none;
+  padding: 5px 30px 0 10px;
+  gap: 20px;
 }
 
 /*main content layout*/
@@ -144,4 +142,38 @@ header > .button-container > button {
   border-radius: 100px;
   font-weight: 600;
   color: white;
+}
+
+/*sidebar design*/
+.logo {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.logo > img {
+  width: 50px;
+  border-radius: 100px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav > div {
+  display: flex;
+}
+
+.nav > div > img {
+  width: 20px;
+  padding: 0 10px;
+}
+
+.nav > .settings {
+  padding-top: 20px;
 }
