@@ -102,7 +102,7 @@ header > div {
   border-radius: 30px;
   border: none;
   background-color: #d63484;
-  color: white;
+  color: #f8f4ec;
   padding: 5px 10px;
 }
 
@@ -146,7 +146,7 @@ header > .button-container > button {
   border: none;
   border-radius: 100px;
   font-weight: 600;
-  color: white;
+  color: #f8f4ec;
 }
 
 /*sidebar design*/
@@ -205,7 +205,7 @@ header > .button-container > button {
 }
 
 .project {
-  background-color: #f8f4ec;
+  background: linear-gradient(90deg, #e668a7fd 1%, #f8f4ec 3%);
   width: min(70%, 500px);
   height: min(66%, 500px);
   margin: 0 40px 30px 40px;
@@ -280,4 +280,24 @@ header > .button-container > button {
 
 .trending > span {
   font-weight: 600;
+}
+
+.trending > p {
+  font-size: small;
+}
+
+/*add other design*/
+.project,
+.announcements-container,
+.trending-container {
+  box-shadow: 3px 3px 5px #402b3a;
+}
+
+button,
+.project,
+.trending,
+.announcement,
+.sidebar > .nav > div,
+img {
+  cursor: pointer;
 }
