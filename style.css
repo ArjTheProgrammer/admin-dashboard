@@ -192,7 +192,7 @@ header > .button-container > button {
   padding: 10px;
   font-weight: 700;
 }
-
+/*project design */
 .project {
   background-color: #f8f4ec;
   width: min(70%, 300px);
@@ -200,4 +200,31 @@ header > .button-container > button {
   margin: 0 20px 20px 20px;
   padding: 20px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project > span {
+  font-weight: 700;
+}
+
+.project > p {
+  font-size: small;
+  padding: 5px 0 30px 0;
+}
+
+.project > .action-container {
+  align-self: flex-end;
+}
+
+.action-container > button {
+  background-color: transparent;
+  padding: 0 5px;
+  border: none;
+  height: 25px;
+  width: 25px;
+}
+
+.action-container > button > img {
+  height: 20px;
 }
