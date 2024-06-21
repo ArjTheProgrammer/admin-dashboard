@@ -64,6 +64,11 @@ header > div {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
+.announcements {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .announcement {
   padding: 10px;
 }
@@ -227,4 +232,28 @@ header > .button-container > button {
 
 .action-container > button > img {
   height: 20px;
+}
+
+/*announcement*/
+.announcements-container {
+  background-color: #f8f4ec;
+  margin: 0 20px 20px 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.announcement {
+  border-bottom: 1px solid #402b3ac8;
+}
+
+.announcement:last-child {
+  border: none;
+}
+
+.announcement > .title {
+  font-weight: 700;
+}
+
+.announcement > p {
+  font-size: small;
 }
