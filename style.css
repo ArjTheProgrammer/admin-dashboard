@@ -61,7 +61,7 @@ header > div {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .announcements {
@@ -196,17 +196,24 @@ header > .button-container > button {
 .trendings > span {
   padding: 10px;
   font-weight: 700;
+  font-size: larger;
 }
 /*project design */
+.project-container {
+  align-items: center;
+  justify-content: center;
+}
+
 .project {
   background-color: #f8f4ec;
-  width: min(70%, 300px);
-  height: auto;
-  margin: 0 20px 20px 20px;
+  width: min(70%, 500px);
+  height: min(66%, 500px);
+  margin: 0 40px 30px 40px;
   padding: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 
 .project > span {
