@@ -8,13 +8,8 @@
 .container {
   display: grid;
   grid-template-areas:
-    "sidebar    header       header        header      header"
-    "sidebar main-content main-content main-content main-content"
-    "sidebar main-content main-content main-content main-content"
-    "sidebar main-content main-content main-content main-content"
-    "sidebar main-content main-content main-content main-content"
-    "sidebar main-content main-content main-content main-content"
-    "sidebar main-content main-content main-content main-content";
+    "sidebar    header       header      header"
+    "sidebar main-content main-content main-content";
 }
 /* header layout */
 
